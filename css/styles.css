@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 400px;
+    background: url(../images/background.jpg);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    pointer-events: none
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+}
+
+.open {
+    margin-top: 20px;
+    pointer-events: none
+}
+
+canvas {
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: -42px;
+}
