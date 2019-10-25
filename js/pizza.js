@@ -1,4 +1,5 @@
 var canvas = document.getElementById('canvas');
+var creative = document.getElementById('creative');
 
 var ctx = canvas.getContext('2d');
 
@@ -14,13 +15,18 @@ sprite.onload = function () {
     requestAnimationFrame(tick);
 }
 
+window.addEventListener('load', function(){
+    creative.classList.add('loaded');
+});
+
 window.addEventListener('click', function () {
     isStart = true;
+    creative.classList.add('clicked');
 });
 
 function tick() {
     if (isStart) {
-        if (tickCount > 3) {
+        if (tickCount > 2) {
             draw();
             tickCount = 0;
         }
