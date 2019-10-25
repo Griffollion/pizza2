@@ -8,7 +8,7 @@ var tickCount = 0;
 var isStart = false;
 
 var sprite = new Image();
-sprite.src = '../images/sprite.png';
+sprite.src = '/images/sprite.png';
 sprite.onload = function () {
     ctx.drawImage(sprite, x, 0, 234, 354, 0, 0, 234, 354);
     tick();
