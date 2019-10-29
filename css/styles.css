@@ -1,8 +1,6 @@
 html, body {
   position: relative;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -23,8 +21,8 @@ html, body {
 .container.loaded .open {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -32,12 +30,12 @@ html, body {
 .container.loaded .pusling-block {
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
 }
 
 .container.loaded .cursor.pulse {
@@ -85,34 +83,34 @@ html, body {
 .container.clicked .text2 {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
 }
 
 .container.clicked .clock {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 .container.clicked .fire {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 1.7s;
-  animation-delay: 1.7s;
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
 }
 
 .container.clicked .pulse-button {
@@ -126,30 +124,16 @@ html, body {
   bottom: -20px;
   -webkit-animation-name: bounceInUp2;
   animation-name: bounceInUp2;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 1.9s !important;
-  animation-delay: 1.9s !important;
+  -webkit-animation-delay: 3s !important;
+  animation-delay: 3s !important;
 }
 
 .container.clicked .cursor.pulse {
   display: none;
-}
-
-.container.clicked .link {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.link {
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0;
 }
 
 .logo {
@@ -252,10 +236,6 @@ canvas {
   -webkit-box-shadow: 0 0 0 0 rgba(227, 24, 55, 0.6);
   box-shadow: 0 0 0 0 rgba(227, 24, 55, 0.6);
   -webkit-animation: pulse-btn 1.5s infinite;
-}
-
-.sprite {
-  display: none !important;
 }
 
 .pulse-button:hover {
@@ -655,4 +635,8 @@ canvas {
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
+}
+
+.sprite {
+  display: none !important;
 }
