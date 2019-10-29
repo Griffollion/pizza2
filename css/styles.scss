@@ -112,6 +112,10 @@ html,body {
             animation-fill-mode: both; 
         }
 
+        .steam_top {
+            animation: steamTopShow 4s linear infinite;
+        }
+
         .cursor.pulse {
             display: none;
         }
@@ -274,6 +278,11 @@ canvas {
         100%{opacity: 1;}
     }
 
+
+    @keyframes  steamTopShow {
+        0%,10%,100% {opacity: 0;}
+        40%, 75%{opacity: 1;}
+    }
 
 
 @keyframes bounceInRight {
@@ -485,6 +494,20 @@ transform: none;
     top: 80px;
     z-index: 5;
     left: 27px;
-    top: -80px;
+    top: -75px;
     opacity: 0;
+    height: 352px;
+    width: 215px;
+}
+
+.steam_top {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.steam_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
