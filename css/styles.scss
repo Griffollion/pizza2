@@ -48,6 +48,9 @@ html,body {
     }
 
     &.clicked {
+        .link {
+            display: block;
+        }
         .pusling-block .text1 {
             display: none;
         }
@@ -134,7 +137,17 @@ html,body {
 
 .logo img {
     width: 170px;
-    height: auto;
+    height: 38px;
+}
+
+.link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
 }
 
 .open {
