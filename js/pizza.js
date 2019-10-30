@@ -8,25 +8,28 @@ var tickCount = 0;
 var isStart = false;
 
 var sprite = new Image();
-sprite.src = '/images/sprite.png';
+
+sprite.src = './images/sprite.png';
 sprite.onload = function () {
     ctx.drawImage(sprite, x, 0, 234, 354, 0, 0, 234, 354);
     tick();
     requestAnimationFrame(tick);
 }
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     creative.classList.add('loaded');
+    
+    window.addEventListener('click', function () {
+        isStart = true;
+        creative.classList.add('clicked');
+    });
 });
 
-window.addEventListener('click', function () {
-    isStart = true;
-    creative.classList.add('clicked');
-});
+
 
 function tick() {
     if (isStart) {
-        if (tickCount > 2) {
+        if (tickCount > 5) {
             draw();
             tickCount = 0;
         }
@@ -47,5 +50,4 @@ function draw() {
     }
 
     ctx.drawImage(sprite, x, 0, 234, 355, 0, 0, 234, 355);
-
 }

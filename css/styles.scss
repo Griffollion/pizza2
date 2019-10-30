@@ -109,14 +109,10 @@ html,body {
             animation-delay: 3s !important;
         }
 
-        .steam {
-            animation-name: steamShow;
-            animation-duration: 1s;
+        .smoke {
+            animation-name: smokeShow;
+            animation-duration: 2s;
             animation-fill-mode: both; 
-        }
-
-        .steam_top {
-            animation: steamTopShow 4s linear infinite;
         }
 
         .cursor.pulse {
@@ -286,17 +282,10 @@ canvas {
     }
 
 
-    @keyframes  steamShow {
+    @keyframes  smokeShow {
         0% {opacity: 0;}
-        100%{opacity: 1;}
+        100%{opacity: .3;}
     }
-
-
-    @keyframes  steamTopShow {
-        0%,10%,100% {opacity: 0;}
-        40%, 75%{opacity: 1;}
-    }
-
 
 @keyframes bounceInRight {
 0%, 60%, 75%, 90%, 100% {
@@ -501,37 +490,12 @@ transform: none;
     display: none !important;
 }
 
-.steam {
-    position: absolute;
-    left: 100px;
-    top: 80px;
-    z-index: 5;
-    left: 27px;
-    top: -75px;
-    opacity: 0;
-    height: 352px;
-    width: 215px;
-}
-
-.ld {
-    display: none;
-}
-
 .smoke {
-    position: relative;
-    opacity: .3;
+    position: absolute;
+    left: 0;
+    opacity: 1;
     z-index: 5;
-    top: 0;
-}
-
-.steam_top {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.steam_bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    top: 50px;
+    opacity: 0;
+    pointer-events: none;
 }
