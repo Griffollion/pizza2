@@ -513,6 +513,17 @@ transform: none;
     width: 215px;
 }
 
+.ld {
+    display: none;
+}
+
+.smoke {
+    position: relative;
+    opacity: .3;
+    z-index: 5;
+    top: 0;
+}
+
 .steam_top {
     position: absolute;
     left: 0;
