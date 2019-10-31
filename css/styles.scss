@@ -284,7 +284,10 @@ canvas {
 
     @keyframes  smokeShow {
         0% {opacity: 0;}
-        100%{opacity: .3;}
+        100%{
+            opacity: .3;
+    filter: brightness(1.1);
+        }
     }
 
 @keyframes bounceInRight {
@@ -492,10 +495,10 @@ transform: none;
 
 .smoke {
     position: absolute;
-    left: 0;
-    opacity: 1;
+    left: -471px;
     z-index: 5;
-    top: 50px;
+    top: -410px;
     opacity: 0;
     pointer-events: none;
+    transform: rotate(-134deg);
 }
